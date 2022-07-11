@@ -29,6 +29,7 @@ namespace WOL
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fMain));
             this.btnWakeUp = new System.Windows.Forms.Button();
             this.tBoxLog = new System.Windows.Forms.RichTextBox();
             this.tBoxMacAddress = new System.Windows.Forms.TextBox();
@@ -89,6 +90,7 @@ namespace WOL
             this.Controls.Add(this.tBoxMacAddress);
             this.Controls.Add(this.tBoxLog);
             this.Controls.Add(this.btnWakeUp);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "fMain";
             this.Text = "Wake On Lan";
             this.ResumeLayout(false);
